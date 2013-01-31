@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=320; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Geo Loja</title>
+    <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.0b2.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="pgandjqm-style-override.css" type="text/css" charset="utf-8" />
+	<script type="text/javascript" src="jquery.mobile/jquery-1.6.2.min"></script>
+	<script type="text/javascript" src="jquery.mobile/jquery.mobile-1.0b2.js"></script>
+  	<script type="text/javascript" src="phonegap-1.4.1.js"></script>
+	<script src="main.js"></script>
+
+	</head>
+  <body>
+    <div data-role="page" data-theme="b">
+  	<div data-role="header">
+    	<h1>Loja Geo Digital</h1> 
+	</div>
+	
+    <div data-role="content">
+    	<INPUT TYPE="button" NAME="button" Value="Ingresar" onClick="ingreso()">
+ 
+    	
+	    <div data-role="collapsible" data-collapsed="true">   
+	    	<h1><div>Desrrollado por:</div></h1>
+	    	<a href="http://www.facebook.com/pato111ok">Patricio Jarmillo</a>  
+	    </div>
+
+	    <div data-role="collapsible" data-collapsed="false">
+		    <h1><div>Loguearse</div></h1>
+		    <form NAME="formLogueo" METHOD="post">
+		        <b>Username: </b><input type="text" id="login" placeholder="Login" /><br/>
+		        <b>Password: </b><input type="password" id="password" /><br/>
+		        <INPUT TYPE="button" NAME="button" Value="Loguearse" onClick="loguearse(formLogueo)">
+		    </form>
+	    </div>
+
+    </div><!-- end jqm content -->
+    <div data-role="footer">
+    	<h1>Arquitectura de Aplicaciones </h1>
+    </div>
+    </div><!-- end jqm page -->
+  </body>
+</html>
